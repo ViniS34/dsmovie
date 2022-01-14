@@ -15,9 +15,9 @@ function FormCard( { movieId } : Props) {
 
     useEffect(() => {
         axios.get(`${BASE_URL}/movies/${movieId}`)
-        .then(response => {
-            setMovie(response.data);
-        });
+            .then(response => {
+                setMovie(response.data);
+            });
     })
 
     return (
@@ -49,7 +49,7 @@ function FormCard( { movieId } : Props) {
                 </Link>
             </div>
         </div>
-    )
+    );
 }
 
 export default FormCard;
